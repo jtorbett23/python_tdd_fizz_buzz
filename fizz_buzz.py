@@ -1,7 +1,7 @@
 #fizz buzz function that handles only positive integers
 
 def fizz_buzz(x):
-    if(x > 0):
+    if(type(x) == int and x > 0):
         if(x % 3 == 0 and x % 5 == 0):
             return 'FizzBuzz'
         elif(x % 3 == 0):
