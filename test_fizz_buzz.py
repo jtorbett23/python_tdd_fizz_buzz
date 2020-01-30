@@ -32,6 +32,9 @@ class Test_fizz_buzz(unittest.TestCase):
         #string values
         self.assertEqual(fizz_buzz.fizz_buzz('abc'),'Please enter a positive integer')
         self.assertEqual(fizz_buzz.fizz_buzz('50'),'Please enter a positive integer')
+        #special character values
+        self.assertEqual(fizz_buzz.fizz_buzz('@'),'Please enter a positive integer')
+        self.assertEqual(fizz_buzz.fizz_buzz('!'),'Please enter a positive integer')
         
 
 
