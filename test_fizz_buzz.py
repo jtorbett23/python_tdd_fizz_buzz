@@ -17,7 +17,12 @@ class Test_fizz_buzz(unittest.TestCase):
     def test_buzz(self):
         self.assertEqual(fizz_buzz.fizz_buzz(15),'FizzBuzz')
         self.assertEqual(fizz_buzz.fizz_buzz(90),'FizzBuzz')
-
+    #returns an error message for non-positive integers
+    def test_edge_cases(self):
+        # 0 and negative integers
+        self.assertEqual(fizz_buzz(0),'Please enter a positive integer')
+        self.assertEqual(fizz_buzz(-1),'Please enter a positive integer')
+        self.assertEqual(fizz_buzz(-5),'Please enter a positive integer')
 
     
     
