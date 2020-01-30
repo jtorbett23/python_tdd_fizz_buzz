@@ -23,6 +23,10 @@ class Test_fizz_buzz(unittest.TestCase):
         self.assertEqual(fizz_buzz.fizz_buzz(0),'Please enter a positive integer')
         self.assertEqual(fizz_buzz.fizz_buzz(-1),'Please enter a positive integer')
         self.assertEqual(fizz_buzz.fizz_buzz(-5),'Please enter a positive integer')
+        #float values
+        self.assertEqual(fizz_buzz.fizz_buzz(0.5),'Please enter a positive integer')
+        self.assertEqual(fizz_buzz.fizz_buzz(-2.5),'Please enter a positive integer')
+
 
     
     
