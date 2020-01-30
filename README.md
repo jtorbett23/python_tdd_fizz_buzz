@@ -9,3 +9,7 @@ FizzBuzz is a game in which players need to:
 - On multiples of 5 they must instead say Buzz e.g 25
 - On multiples of 3 & 5 they must say FizzBuzz e.g 30
 
+To run tests:
+``` python test_fizz_buzz.py ```
+
+Note use whatever keyword you have for python 3 on your machine.
