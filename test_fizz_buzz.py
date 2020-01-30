@@ -5,10 +5,15 @@ class Test_fizz_buzz(unittest.TestCase):
     #returns a number
     def test_number(self):
         self.assertEqual(fizz_buzz.fizz_buzz(1),1)
-    #returns fizz on multiples of 3
+    #returns Fizz on multiples of 3
     def test_fizz(self):
         self.assertEqual(fizz_buzz.fizz_buzz(3),'Fizz')
         self.assertEqual(fizz_buzz.fizz_buzz(42),'Fizz')
+    #returns Buzz on multiples of 5
+    def test_buzz(self):
+        self.assertEqual(fizz_buzz.fizz_buzz(5),'Buzz')
+        self.assertEqual(fizz_buzz.fizz_buzz(65),'Buzz')
+
     
     
 
